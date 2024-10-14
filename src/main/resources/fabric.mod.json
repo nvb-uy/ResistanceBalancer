@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "resistance_balancer",
+	"version": "${version}",
+	"name": "Resistance Balancer",
+	"description": "Changes the logic of the Resistance potion effect and allows to change its formula.",
+	"authors": [
+		"ElocinDev"
+	],
+	"contact": {
+		"homepage": "https://legacy.curseforge.com/minecraft/mc-mods/protbalancer"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"elocindev.resistance_balancer.ResistanceBalancer"
+		]
+	},
+	"mixins": [
+		"resistance_balancer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"java": ">=17",
+		"fabric-api": "*",
+		"necronomicon": ">=1.4.2"
+	}
+}
